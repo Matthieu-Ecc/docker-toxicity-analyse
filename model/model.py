@@ -1,7 +1,8 @@
 from detoxify import Detoxify
 
-text = "would you suck my balls Mexicanos of shit, or i kill your bich ass mother"
+def toxicity_scores(text):
 
-results = Detoxify('original').predict(text)
+    results = Detoxify('original').predict(text)
 
-print(results)
+    return results
+    
