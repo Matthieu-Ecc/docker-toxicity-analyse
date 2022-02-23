@@ -11,8 +11,8 @@ class HelloWorld(Resource):
     def get(self):
         sentence = request.args.get("data")
         toxicity = toxicity_scores(sentence)
-        return {'sentence': sentence, 'toxicity': toxicity['toxicity'], 'severe toxicity': toxicity['severe_toxicity'], 'obscene': toxicity['obscene'],
-                'threat': toxicity['threat'], 'insult':toxicity['insult'], 'identity_attack':toxicity['identity_attack']}
+        return {'sentence': sentence, 'toxicity': str(toxicity['toxicity']), 'severe_toxicity': str(toxicity['severe_toxicity']), 'obscene': str(toxicity['obscene']),
+                'threat': str(toxicity['threat']), 'insult': str(toxicity['insult']), 'identity_attack': str(toxicity['identity_attack'])}
 
 
 api.add_resource(HelloWorld, '/')

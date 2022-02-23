@@ -2,7 +2,10 @@ from detoxify import Detoxify
 
 def toxicity_scores(text):
 
-    results = Detoxify('original').predict(text)
+    try:
+        results = Detoxify('original').predict(text)
 
-    return results
+        return results
+    except:
+        return 'error'
     
