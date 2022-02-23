@@ -30,12 +30,12 @@
             <h3>Your sentence : </h3>{{ text }}
 
             <h5> The Detail is below : </h5>
-            {{ toxicity }}
-            {{ severe_toxicity }}
-            {{ obscene }}
-            {{ threat }}
-            {{ insult }}
-            {{ identity }}
+            <b>Toxicity</b> : {{ toxicity }}<br></br>
+            <b>Severe Toxcity</b> : {{ severe_toxicity }}<br></br>
+            <b>Obscene</b> : {{ obscene }}<br></br>
+            <b>Threat</b> : {{ threat }}<br></br>
+            <b>Insult</b> : {{ insult }}<br></br>
+            <b>Identity hate</b> : {{ identity }}
 
             {% else %}
             <p></p>
