@@ -13,5 +13,5 @@ def configure_routes(app):
         api_url = "http://api-toxicity:5000/?data=" + text_to_analyse
         response = requests.get(api_url)
         json_response = response.json()
-        return render_template('index.html', final=False, toxicity = json_response['toxicity'], severe_toxicity = json_response['severe_toxicity'],
+        return render_template('index.html', toxicity = json_response['toxicity'], severe_toxicity = json_response['severe_toxicity'],
          obscene = json_response['obscene'], threat = json_response['threat'], insult = json_response['insult'], identity = json_response['identity_attack'])
