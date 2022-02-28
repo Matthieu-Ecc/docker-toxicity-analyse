@@ -10,7 +10,7 @@ pipeline {
         stage('Execute Tests'){
             steps{
                 bat 'pip install pytest' 
-                bat 'pytest test_app.py'
+                bat 'pytest'
             }
         }
         stage('Switching to release branch'){

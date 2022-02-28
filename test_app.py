@@ -1,6 +1,3 @@
-import time
-
-import requests
 from flask import Flask, request
 from flask_restful import Resource, Api
 
@@ -35,16 +32,3 @@ def test_toxicity():
     url = '/?data=I%20hate%20everyone%20on%20this%20earth'
     response = client.get(url)
     assert response.get_data()
-
-
-def test_connection():
-    assert requests.get("http://localhost:5000").status_code == 200, "web site is not up"
-
-
-def test_stress_requests():
-    start = time.time()
-    for i in range(1000):
-        requests.get("http://localhost:5000")
-
-    end = time.time() - start
-    assert (end / 1000) < 100, "stress not passed"
