@@ -2,7 +2,6 @@ from flask import Flask
 
 from routes import configure_routes
 
-from flask import jsonify
 from prometheus_flask_exporter import PrometheusMetrics
 
 app = Flask(__name__)

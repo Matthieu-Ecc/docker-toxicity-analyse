@@ -3,9 +3,11 @@ from flask_restful import Resource, Api
 
 from model import toxicity_scores
 
+from prometheus_flask_exporter import PrometheusMetrics
+
 app = Flask(__name__)
 api = Api(app)
-
+metrics = PrometheusMetrics(app)
 
 class HelloWorld(Resource):
     def get(self):
