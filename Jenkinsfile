@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Execute Tests') {
             steps {
-                bat 'test-jenkins\Scripts\activate.bat'
+                bat 'test-jenkins/Scripts/activate.bat'
                 bat 'python --version'
                 bat 'pytest test_app.py'
             }
