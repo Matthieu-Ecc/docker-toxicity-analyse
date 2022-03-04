@@ -8,9 +8,10 @@ pipeline {
             }
         }
         stage('Execute Tests'){
-            withPythonEnv('python3') {
-                bat 'pip install pytest' 
-                bat 'pytest test_app.py'
+            node{
+                def status = powershell(returnStatus: true, script: '.\test-jenkins\Scripts\activate')
+                if (status == 0) {
+        // Success!
             }
         }
         stage('Switching to release branch'){
