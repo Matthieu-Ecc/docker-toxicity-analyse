@@ -21,9 +21,9 @@ scrape_configs:
   - job_name: backend
     scrape_interval: 5s
     static_configs:
-      - targets: ['api-toxicity:5001']
+      - targets: ['api-toxicity:5000']
 
   - job_name: frontend
     scrape_interval: 5s
     static_configs:
-      - targets: ['web-toxicity:5000']
+      - targets: ['web-toxicity:5001']

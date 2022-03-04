@@ -17,6 +17,6 @@ RUN pip install prometheus-flask-exporter
 # copy model
 #COPY toxic_original-c1212f89.ckpt /root/.cache/torch/hub/checkpoints/
 
-EXPOSE 5001
+EXPOSE 5000
 
 CMD ["python", "-m", "flask", "run", "--host=0.0.0.0"]

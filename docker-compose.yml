@@ -4,13 +4,13 @@ services:
     build: backend/.
     container_name: api-toxicity
     ports:
-      - "5001:5001"
+      - "5000:5000"
 
   web-server:
     build: web/.
     container_name: web-toxicity
     ports:
-      - "5000:5000"
+      - "5001:5000"
 
   prometheus:
     image: prom/prometheus
