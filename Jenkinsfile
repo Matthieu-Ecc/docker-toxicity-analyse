@@ -8,8 +8,10 @@ pipeline {
             }
         }
         stage('Execute Tests') {
-            node {
-                powershell 'Write-Output ./test-jenkins/Scripts/activate'
+            steps {
+                node {
+                    powershell 'Write-Output ./test-jenkins/Scripts/activate'
+                }
             }
         }
         stage('Switching to release branch') {
