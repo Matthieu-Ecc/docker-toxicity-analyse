@@ -9,7 +9,9 @@ pipeline {
         }
         stage('Execute Tests') {
             steps {
-                bat 'python -m pytest test_app.py'
+                withEnv('python'){
+                    bat 'python -m pytest test_app.py'
+                }
             }
         }
         stage('Switching to release branch') {
