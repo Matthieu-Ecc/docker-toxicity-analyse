@@ -9,9 +9,7 @@ pipeline {
         }
         stage('Execute Tests') {
             steps {
-                bat 'test-jenkins/Scripts/activate.bat && python --version'
-
-                bat 'pytest test_app.py'
+                bat 'python -m pytest .\test_app.py'
             }
         }
         stage('Switching to release branch') {
