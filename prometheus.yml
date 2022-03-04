@@ -12,16 +12,18 @@ scrape_configs:
 
   - job_name: prometheus
     static_configs:
-      - targets: ['localhost:9090']
+      - targets: ['prometheus:9090']
 
   - job_name: node
     static_configs:
       - targets: [ 'node-exporter:9100' ]
 
   - job_name: backend
+    scrape_interval: 5s
     static_configs:
-      - targets: ['api-toxicity:80']
+      - targets: ['api-toxicity:5001']
 
   - job_name: frontend
+    scrape_interval: 5s
     static_configs:
       - targets: ['web-toxicity:5000']

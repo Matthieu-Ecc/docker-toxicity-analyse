@@ -4,7 +4,7 @@ services:
     build: backend/.
     container_name: api-toxicity
     ports:
-      - "80:5000"
+      - "5001:5001"
 
   web-server:
     build: web/.
