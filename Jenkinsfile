@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Execute Tests') {
             node {
-                powershell './test-jenkins/Scripts/activate'
+                powershell 'Write-Output ./test-jenkins/Scripts/activate'
             }
         }
         stage('Switching to release branch') {
