@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Execute Tests'){
             node{
-                def status = powershell(returnStatus: true, script: '.\test-jenkins\Scripts\activate')
+                def status = powershell(returnStatus: true, script: './test-jenkins/Scripts/activate')
                 if (status == 0) {
         // Success!
             }
