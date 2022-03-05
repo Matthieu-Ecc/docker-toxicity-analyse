@@ -4,3 +4,9 @@ groups:
       - alert: InstanceDown
         expr: up == 0
         for: 1m
+      - alert: TooManyConnection
+        expr: flask_http_request_total >= 10000
+        for: 1m
+      - alert: SizeToBig
+        expr: process_virtual_memory_bytes >= 4000000000
+        for: 1m
