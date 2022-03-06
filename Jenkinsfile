@@ -22,7 +22,7 @@ pipeline {
             steps {
                 bat 'git add .'
                 bat 'git diff --quiet && git diff --staged --quiet || git commit -am "Change for release"'
-                bat 'git push'
+                bat 'git push --set-upstream origin release'
             }
         }
     }
