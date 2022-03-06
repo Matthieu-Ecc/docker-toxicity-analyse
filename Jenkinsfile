@@ -20,7 +20,7 @@ pipeline {
         stage('Deliver') {
             steps {
                     withCredentials([usernamePassword(credentialsId: 'GitHub', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
-                    bat "git push release http://${GIT_USERNAME}:${GIT_PASSWORD}github.com/Matthieu-Ecc/docker-toxicity-analyse"
+                    bat "git push http://${GIT_USERNAME}:${GIT_PASSWORD}github.com/Matthieu-Ecc/docker-toxicity-analyse/tree/release"
                 }
 
             }
