@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Switching to release branch') {
             steps {
-                bat 'git checkout release'
+                bat 'git switch release'
             }
         }
         stage('Deliver') {
