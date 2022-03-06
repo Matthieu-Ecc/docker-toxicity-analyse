@@ -19,7 +19,9 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                    bat 'git push --set-upstream origin release'
+                    withCredentials([usernamePassword(credentialsId: 'GitHub', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
+                    bat "git push release http://${GIT_USERNAME}:${GIT_PASSWORD}github.com/Matthieu-Ecc/docker-toxicity-analyse"
+                }
 
             }
         }
