@@ -20,12 +20,12 @@ Instructor: **Khodor Hammoud**.
     <img src="https://img.shields.io/maintenance/no/2021?style=for-the-badge"
       alt="Maintenance" />
   <!-- Last Commit -->
-  <a href="https://github.com/CleaverEFREI/data_engineering_project/commit/main">
+  <a href="https://github.com/Matthieu-Ecc/docker-toxicity-analyse/commit/main">
     <img src="https://img.shields.io/github/last-commit/Matthieu-Ecc/docker-toxicity-analyse?style=for-the-badge"
       alt="Last Commit" />
   </a>
   <!-- Activity -->
-  <a href="https://github.com/CleaverEFREI/data_engineering_project/graphs/commit-activity">
+  <a href="https://github.com/Matthieu-Ecc/docker-toxicity-analyse/graphs/commit-activity">
     <img src="https://img.shields.io/github/commit-activity/w/Matthieu-Ecc/docker-toxicity-analyse?style=for-the-badge"
       alt="Activity" />
   </a>
@@ -38,5 +38,5 @@ Instructor: **Khodor Hammoud**.
 
 ## Organization:
 <div align="center">
-<a href="https://www.efrei.fr/" target="_blank"><img src="https://www.efrei.fr/wp-content/uploads/2019/06/Logo-Efrei-2017-Fr-Web.png" width="270" height="100"></a>
+<a href="https://www.efrei.fr/" target="_blank"><img src="https://www.efrei.fr/wp-content/uploads/2022/01/LOGO_EFREI-PRINT_EFREI-WEB.png" width="270" height="100"></a>
 </div>
