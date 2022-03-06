@@ -41,6 +41,24 @@ Instructor: **Khodor Hammoud**
 <a href="https://www.efrei.fr/" target="_blank"><img src="https://www.efrei.fr/wp-content/uploads/2022/01/LOGO_EFREI-PRINT_EFREI-WEB.png" width="270" height="100"></a>
 </div>
 
+### To use our application, you need to do :
+
+* __1__ - git clone the repository : https://github.com/Matthieu-Ecc/docker-toxicity-analyse.git
+
+* __2__ - Make sure your Docker is running
+
+* __3__ - Navigate to the project repository in the terminal
+
+* __4__ - Type "docker-compose up" to build & launch the application
+
+* __5__ - When its done launching, visit : 
+  * http://localhost:5000 to access the webserver
+  * http://localhost:9090 to access promotheus 
+  * http://localhost:9093 to access alertmanager
+ 
+### To launch test :
+    pytest test_app.py
+  
  ## 1. User Stories
 
 
