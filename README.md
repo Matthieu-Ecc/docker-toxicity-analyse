@@ -51,13 +51,15 @@ Instructor: **Khodor Hammoud**
   
   ## 2. Application Overview
   
-    <img src="https://cdn.discordapp.com/attachments/817415325788274739/949960854319824946/Sans_titre.png" width="786" height="584">
+    <img src="https://cdn.discordapp.com/attachments/817415325788274739/949961200660283452/Sans_titre.png" width="786" height="584">
   
   ## 3. Technical Description
 
 **3.1 The ML Model**
+  
+The students will use the hugging-face model: unitary/toxic-bert. This model has been trained to detect toxicity in text, and returns analysis about different metrics relating to toxicity analysis. A full description of the model, as well as how to use it, can be found on their huggingface page:
+https://huggingface.co/unitary/toxic-bert
 
-The students are free to choose whichever machine-learning model they want, and whichever dataset they please (as long as it is in English, as this is a user requirement). The end product should have the model ready and pre-trained, with the requested minimum accuracy.
 
 **3.2 The Web Interface**
 
