@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Switching to release branch') {
             steps {
-                bat 'git branch -D release 2> /dev/null'
+                bat 'git branch -D release 2> error.txt'
                 bat 'git switch -c release'
             }
         }
