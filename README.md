@@ -33,7 +33,7 @@ Instructor: **Khodor Hammoud**
 
 <div align="center">
   <sub>Project made by
-  <a href="https://github.com/Matthieu-Ecc">Numan Sahnou - Matthieu Eccher - Rayane Edjekouane</a>
+  <a href="https://github.com/Matthieu-Ecc">Numan Sahnou - Matthieu Eccher - Rayan Edjekouane</a>
 </div>
 
 ## Organization:
@@ -52,7 +52,7 @@ Instructor: **Khodor Hammoud**
 * __4__ - Type "docker-compose up" to build & launch the application
 
 * __5__ - When its done launching, visit : 
-  * http://localhost:5000 to access the _webserver_
+  * http://localhost:5001 to access the _webserver_
   * http://localhost:9090 to access _promotheus_ 
   * http://localhost:9093 to access _alertmanager_
   * http://localhost:3000 to access _grafana_
