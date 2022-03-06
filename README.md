@@ -43,12 +43,15 @@ Instructor: **Khodor Hammoud**
 
  ## 1. User Stories
 
-- The application is a sentiment analysis application, which, given a piece of text, should be able to reply with its sentiment as being positive, negative, or neutral.
-- The text language used must be English
-- The application should have a web interface with an input form and a submit button, where users can input their sentences, and hit submit, and the sentiment of their sentence will be presented.
-- The accuracy of the sentiment analyzer should be above 80%
-- The application must be easily deployable
-- The application must be properly monitored after deployment, we want to be able to quickly find any issue that might cause performance problems or down time.
+
+* The application is a toxicity monitor, where the user inputs a piece of text, and the application should be able to infer if the text is toxic or not.
+* The text language used must be English
+* The application should have a web interface with an input form and a submit button, where users can input their potentially toxic text, and hit submit, then the statistics about the text’s toxicity are displayed.
+* Every functional part of the application must be tested for proper functionality.
+* The application must be able to handle 100 requests per minute.
+* The application must be easily deployable.
+* The application must be properly monitored after deployment, we want to be able to quickly find any issue that might cause performance problems or down time.
+
   
   ## 2. Application Overview
   
