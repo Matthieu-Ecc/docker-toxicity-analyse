@@ -10,3 +10,6 @@ groups:
       - alert: SizeToBig
         expr: process_virtual_memory_bytes >= 4000000000
         for: 1m
+      - alert: CpuTooHigh
+        expr: process_cpu_seconds_total >= 20
+        for: 10s
