@@ -21,12 +21,12 @@ Instructor: **Khodor Hammoud**
       alt="Maintenance" />
   <!-- Last Commit -->
   <a href="https://github.com/Matthieu-Ecc/docker-toxicity-analyse/commit/prom">
-    <img src="https://img.shields.io/github/last-commit/Matthieu-Ecc/docker-toxicity-analyse?style=for-the-badge"
+    <img src="https://img.shields.io/github/last-commit/Matthieu-Ecc/docker-toxicity-analyse/prom?style=for-the-badge"
       alt="Last Commit" />
   </a>
   <!-- Activity -->
   <a href="https://github.com/Matthieu-Ecc/docker-toxicity-analyse/graphs/commit-activity">
-    <img src="https://img.shields.io/github/commit-activity/w/Matthieu-Ecc/docker-toxicity-analyse?style=for-the-badge"
+    <img src="https://img.shields.io/github/commit-activity/w/Matthieu-Ecc/docker-toxicity-analyse/prom?style=for-the-badge"
       alt="Activity" />
   </a>
 </div>
