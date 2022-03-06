@@ -1,0 +1,51 @@
+version: "3"
+services:
+  toxicity-server:
+    build: backend/.
+    container_name: api-toxicity
+    ports:
+      - "5000:5000"
+
+  web-server:
+    build: web/.
+    container_name: web-toxicity
+    ports:
+      - "5001:5000"
+    depends_on:
+      - toxicity-server
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - "./Volumes/prometheus.yml:/etc/prometheus/prometheus.yml"
+      - "./Volumes/rules.yml:/etc/prometheus/rules.yml"
+
+  node_exporter:
+    image: prom/node-exporter
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+    pid: host
+
+  alertmanager:
+    image: prom/alertmanager
+    container_name: alertmanager
+    ports:
+      - "9093:9093"
+    depends_on:
+      - prometheus
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    volumes:
+      - "./Volumes/datasource.yml:/etc/grafana/provisioning/datasources/default.yml"
+      - "./Volumes/dashboard.yml:/etc/grafana/provisioning/dashboards/default.yml"
+      - "./Volumes/services.json:/etc/grafana/provisioning/dashboards/services.json"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
