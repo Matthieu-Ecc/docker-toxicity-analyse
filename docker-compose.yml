@@ -44,6 +44,7 @@ services:
     volumes:
       - "./Volumes/datasource.yml:/etc/grafana/provisioning/datasources/default.yml"
       - "./Volumes/dashboard.yml:/etc/grafana/provisioning/dashboards/default.yml"
+      - "./Volumes/services.json:/etc/grafana/provisioning/dashboards/services.json"
     ports:
       - "3000:3000"
     depends_on:

@@ -20,6 +20,7 @@ pipeline {
         stage('Deliver') {
             steps {
                     bat 'git push --set-upstream origin release'
+
             }
         }
     }
