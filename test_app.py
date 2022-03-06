@@ -32,3 +32,16 @@ def test_toxicity():
     url = '/?data=I%20hate%20everyone%20on%20this%20earth'
     response = client.get(url)
     assert response.get_data()
+
+
+def test_connection():
+    assert requests.get("http://localhost:5001").status_code == 200, "web site is not up"
+
+
+def test_stress_requests():
+    start = time.time()
+    for i in range(100):
+        requests.get("http://localhost:5001")
+
+    end = time.time() - start
+    assert end < 60000, "stress not passed"
