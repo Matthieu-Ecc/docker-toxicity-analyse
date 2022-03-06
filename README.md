@@ -52,11 +52,12 @@ Instructor: **Khodor Hammoud**
 * __4__ - Type "docker-compose up" to build & launch the application
 
 * __5__ - When its done launching, visit : 
-  * http://localhost:5000 to access the webserver
-  * http://localhost:9090 to access promotheus 
-  * http://localhost:9093 to access alertmanager
+  * http://localhost:5000 to access the _webserver_
+  * http://localhost:9090 to access _promotheus_ 
+  * http://localhost:9093 to access _alertmanager_
+  * http://localhost:3000 to access _grafana_
  
-### To launch test :
+### To launch test (using `pytest`) :
     pytest test_app.py
   
  ## 1. User Stories
