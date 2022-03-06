@@ -14,15 +14,12 @@ pipeline {
         }
         stage('Switching to release branch') {
             steps {
-                bat 'git branch -D release 2> error.txt'
-                bat 'git switch -c release'
+                bat 'git checkout release'
             }
         }
         stage('Deliver') {
             steps {
                 bat 'git add .'
-                bat 'git config --global user.email "matthieu.eccher@efrei.net"'
-                bat 'git config --global user.name "Matthieu-Ecc"'
                 bat 'git diff --quiet && git diff --staged --quiet || git commit -am "Change for release"'
                 bat 'git push --set-upstream origin release'
             }
