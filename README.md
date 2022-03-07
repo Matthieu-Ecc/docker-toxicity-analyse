@@ -28,7 +28,7 @@ Instructor: **Khodor Hammoud**
 
 <div align="center">
   <sub>Project made by
-  <a href="https://github.com/Matthieu-Ecc">Numan Sahnou - Matthieu Eccher - Rayan Edjekouane</a>
+  <a href="https://github.com/numan-sahnou">Numan Sahnou</a> - <a href="https://github.com/Matthieu-Ecc">Matthieu Eccher</a> - <a href="https://github.com/KBL411">Rayan Edjekouane</a>
 </div>
 
 ## Organization:
