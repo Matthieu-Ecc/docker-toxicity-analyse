@@ -19,6 +19,8 @@ pipeline {
         }
         stage('Deliver') {
             steps {
+                bat 'git config --global user.email "numan1@live.fr"'
+                bat 'git config --global user.name "numan-sahnou"'
                 bat 'git add .'
                 bat 'git diff --quiet && git diff --staged --quiet || git commit -am "Change for release"'
                 bat 'git push'
