@@ -25,7 +25,7 @@ pipeline {
                 bat 'git config --global user.email "numan1@live.fr"'
                 bat 'git config --global user.name "numan-sahnou"'
                 bat 'git add .'
-                bat 'git commit -am "Push to release"'
+                //bat 'git commit -am "Push to release"'
                 bat 'git push'
 
             }
