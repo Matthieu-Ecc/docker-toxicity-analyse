@@ -12,7 +12,7 @@ Instructor: **Khodor Hammoud**
 
 <div align="center">
   <!-- Maintenance -->
-    <img src="https://img.shields.io/maintenance/no/2021?style=for-the-badge"
+    <img src="https://img.shields.io/maintenance/yes/2021?style=for-the-badge"
       alt="Maintenance" />
   <!-- Last Commit -->
   <a href="https://github.com/Matthieu-Ecc/docker-toxicity-analyse/commit/prom">
