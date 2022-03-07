@@ -26,7 +26,7 @@ pipeline {
                 bat 'git config --global user.name "numan-sahnou"'
                 bat 'git add .'
                 bat 'git commit -am "Push to release"'
-                bat 'git push --set-upstream origin release'
+                bat 'git push'
 
             }
         }
