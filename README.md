@@ -11,11 +11,6 @@ Instructor: **Khodor Hammoud**
 <br />
 
 <div align="center">
-  <!-- license -->
-  <a href="https://www.mozilla.org/en-US/MPL/2.0/">
-    <img src="https://img.shields.io/github/license/Matthieu-Ecc/docker-toxicity-analyse?style=for-the-badge"
-      alt="license" />
-  </a>
   <!-- Maintenance -->
     <img src="https://img.shields.io/maintenance/no/2021?style=for-the-badge"
       alt="Maintenance" />
